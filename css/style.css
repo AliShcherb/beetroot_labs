@@ -1,0 +1,132 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.aboutMe {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    width: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 50px;
+}
+
+.name {
+    font-size: 36px;
+    margin: 0 20px 0 0;
+}
+
+.position {
+    font-size: 20px;
+    color: coral;
+}
+
+span.label {
+    margin: 0 20px 0 0;
+}
+
+span.email {
+    color: coral;
+}
+
+.general {
+    display: flex;
+
+}
+h2 {
+    margin: 20px 30px 0 0;
+}
+.about {
+    margin: 20px 0 0;
+}
+.general {
+    display: flex;
+}
+
+.study {
+    display: flex;
+    margin: 20px 0 0;
+}
+
+.city {
+    text-transform: uppercase;
+    color: coral;
+}
+
+
+.city_year {
+    margin: 0 20px 0 0;
+    width: 200px;
+}
+
+.title {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 16px;
+}
+
+.year {
+    margin: 0 0 5px;
+}
+
+.general h2 {
+    width: 250px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+.skill {
+    width: calc(50% - 20px);
+    display: flex;
+    margin: 0 20px 0 0;
+}
+
+.rating {
+    background:  url("../images/stars.png") 0px 0px;
+    height: 20px;
+    width: 105px;
+}
+
+.skill_name {
+    width: calc(100% - 105px);
+}
+
+hr {
+    margin: 20px 0 0;
+}
+
+.rating_1 {
+    background-position: 0px 100px;
+}
+
+.rating_2 {
+    background-position: 0px 80px;
+}
+
+.rating_3 {
+    background-position: 0px 60px;
+}
+
+.rating_4 {
+    background-position: 0px 40px;
+}
+
+.rating_5 {
+    background-position: 0px 20px;
+}
