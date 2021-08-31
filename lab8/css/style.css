@@ -1,0 +1,111 @@
+
+.logo{
+    margin-bottom: 50px;
+}
+.who {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #898f99;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 36px;
+}
+.hello {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #27b4b6;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 45px;
+}
+.we {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    width: 630px;
+    margin: 0 auto 108px;
+}
+.blocks {
+    display: flex;
+}
+.block {
+  background-color: #f7f7f7;
+    padding: 10px;
+    height: 420px;
+    width: 25%;
+}
+.block:hover {
+    background-color:#27b4b6;
+}
+.block:last-child {
+    margin-right: 0;
+}
+.blocks > .block >img {
+    margin: 40px 0;
+}
+.blocks > .block >h1 {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blocks > .block >p {
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    margin: 34px auto 0px;
+    width: 178px;
+}
+.blocks > .block:hover {
+    color:white;
+}
+.block * {
+    animation: all 1s linear;
+}
+.blocks > .block:hover .icon {
+    filter: brightness(0) invert(1);
+}
+.flex_parent {
+    display: flex;
+    width: 940px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon {
+    width: 66px;
+    height: 66px;
+    margin: 40px auto;
+}
+
+.icon-anchor {
+    background: url("../images/anchor.png") center no-repeat;
+}
+
+.icon-glasses {
+    background: url("../images/glasses.png") center no-repeat;
+}
+
+.icon-diamond {
+    background: url("../images/diamond.png") center no-repeat;
+}
+
+.icon-monitor {
+    background: url("../images/monitor.png") center no-repeat;
+}
+
+.flex_child {
+    width: 100%;
+}
