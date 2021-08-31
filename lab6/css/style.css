@@ -1,0 +1,61 @@
+body{
+    background: #121116;
+}
+.logo{
+    margin-bottom: 50px;
+}
+.social {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0px;
+}
+
+.separator{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.medias{
+    margin-bottom: 88px;
+}
+
+.separator img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    font-size: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.kasper{
+    font-size: 20px;
+    color: #19c8fa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex_parent {
+    display: flex;
+    width: 1180px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(../images/bg_pattern.png);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.medias a {
+    margin: 0 17px;
+}
