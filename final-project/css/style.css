@@ -5,6 +5,10 @@ header {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .content{
     height:740px;
     text-align: center;
@@ -37,7 +41,7 @@ header {
     margin-bottom: 54px;
 }
 .search{
-    width: calc(100% - 4px);
+    max-width: calc(100% - 4px);
     margin: 0 auto;
     padding: 2px;
     background: #fff;
@@ -92,6 +96,7 @@ header {
     bottom: 130px;
     text-align: center;
     width: 100%;
+    text-decoration: none;
 }
 .scroll > .title{
     font-size: 14px;
@@ -250,7 +255,7 @@ header .button .closed {
 
 #menu li {
     padding: 10px 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #menuToggle input:checked ~ ul {
@@ -262,9 +267,13 @@ nav {
     top: 13px;
 }
 
+.medias li{
+    list-style-type: none;
+}
+
 .why_choose_us {
     background: url("../images/bg_why_choose_use.png");
-    padding: 10px 0;
+    padding: 50px 10px;
     background-size: cover;
 }
 
@@ -279,7 +288,10 @@ nav {
     font-size: 16px;
     font-family: "Josefin Sans";
     color: #e8e8e8;
-    margin: 0 0 10px;
+}
+
+.part1 {
+    margin-bottom: 39px;
 }
 
 a.more_button {
@@ -294,7 +306,7 @@ a.more_button {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 0 0 10px;
+    margin: 0 0 50px;
     /*transition:background-position 1s ease;*/
     background-position: 100% 0%;
 }
@@ -318,10 +330,12 @@ a.more_button:hover {
 .container {
     padding: 0px 10px;
     width: auto;
-    margin: 0 auto;
     display: block;
     height: 100%;
+    margin: 0 auto;
 }
+
+.container {}
 
 .slogan_icons {
     background: #333333;
@@ -385,12 +399,12 @@ a.more_button:hover {
     transform: translate3d(0, 0, 0);
 }
 
-.country_1 {
+.country_left {
     background: url("../images/country_1.png");
     background-size: cover;
 }
 
-.country_2 {
+.country_right {
     background: url("../images/country_2.png");
     background-size: cover;
 }
@@ -401,8 +415,12 @@ a.more_button:hover {
 }
 
 .country_section {
-    padding: 10px 0;
+    padding: 50px 0 50px 0;
     color: #fff;
+}
+
+.country_section country_1{
+    padding: 228px 0 100px 0;
 }
 
 .country_name {
@@ -441,8 +459,7 @@ a.more_button:hover {
     font-size: 36px;
     font-family: "Aleo";
     color: #ffffff;
-    font-weight: 100;
-    margin: 0 0 10px;
+    margin: 0 0 50px;
     text-align: center;
 }
 
@@ -472,27 +489,32 @@ a.more_button:hover {
     text-transform: uppercase;
 }
 
+.container.what {
+    padding: 50px 10px;
+}
+
 .feedback .photo img{
     max-width: 100%;
     margin-bottom: 10px;
 }
 
-footer{
+.footer{
     background: #232323;
 }
 
-footer  .info{
+.footer  .info{
+    padding: 70px 0px 70px 0px;
     display: flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
 }
 
-footer  .info .logo_title{
+.footer  .info .logo_title{
     font-size: 24px;
     margin-bottom: 5px;
 }
-footer  .info .subtitle{
+.footer  .info .subtitle{
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -571,7 +593,7 @@ i.fab.fa-pinterest:hover {
     #menu li {
         display: inline;
         line-height: 80px;
-        margin: 0 0 0 40px;
+        margin: 0 0 0 10px;
     }
 
     nav {
@@ -591,7 +613,6 @@ i.fab.fa-pinterest:hover {
         display: flex;
         height: 100%;
         flex-direction: column;
-        justify-content: center;
     }
 
     .container .left {
@@ -602,12 +623,9 @@ i.fab.fa-pinterest:hover {
         margin: 0 0 0 15px;
     }
 
-    .country_section {
-        height: 700px;
-    }
 
     .container {
-        width: 1090px;
+        max-width: 1070px;
         display: flex;
     }
 
@@ -639,16 +657,12 @@ i.fab.fa-pinterest:hover {
         text-align: right;
     }
 
-    .gallery img {
-        margin: 0 50px 10px 0px;
-    }
-
     .gallery img + img {
         margin: 0 0 10px;
     }
 
     .why_choose_us {
-        height: 690px;
+        padding: 120px 0 120px 0;
     }
 
     .why_choose_us .title {
@@ -660,53 +674,30 @@ i.fab.fa-pinterest:hover {
     }
 
     .slogan_icons .container {
-        background: url("../images/slogan_bg.png") no-repeat top center;
+        background: url("../images/slogan_bg_v2.png") no-repeat top center;
         margin: 0 auto 50px;
         justify-content: space-between;
-        width: 1000px;
+        background-size: contain;
+        max-width: 980px;
     }
 
     .slogan_icons .icon {
         margin: 0;
-        padding: 60px 0 0;
-    }
-
-    .feedback {
-        display: flex;
-    }
-
-    .feedback .photo img {
-        max-width: fit-content;
-        margin: 0;
-    }
-
-    .feedback .text {
-        padding: 50px 60px 0px;
-        margin-bottom: 0px;
+        padding: 40px 0 0;
     }
 
     .feedback .text .name {
         margin: 0 0 10px;
     }
 
-    .photo {
-        height: 284px;
-    }
-
     .opinions .container {
         height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
-    .opinions .title {
-        margin: 100px;
-    }
-
-    .opinions {
-        height: 700px;
-    }
-
-    footer .info {
-        padding: 90px 0 0;
+    .footer .info {
+        padding: 90px 0;
     }
 
     .menu_filler {
@@ -715,6 +706,11 @@ i.fab.fa-pinterest:hover {
 
     .slogan_icons .fas, .slogan_icons .fal {
         font-size: 76px;
+        background: #333333;
+        padding: 15px;
+        width: 76px;
+        margin: 0 auto;
+        border-radius: 60px;
     }
 
     .country {
@@ -727,5 +723,66 @@ i.fab.fa-pinterest:hover {
 
     .country_description {
         margin: 0 0 40px;
+    }
+
+    .feedback .text,
+    .feedback .photo {
+        flex: 1 1 auto;
+    }
+
+    section {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    #menu li {
+        margin: 0 0 0 40px;
+    }
+
+    .gallery img {
+        margin: 0 50px 10px 0px;
+    }
+
+    #menu li {
+        font-size: 22px;
+    }
+
+    .feedback {
+        display: flex;
+    }
+
+    .container.what{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .feedback .photo img {
+        max-width: fit-content;
+        margin: 0;
+    }
+
+    .feedback .text {
+        padding: 40px 60px;
+        margin-bottom: 0px;
+    }
+
+    .feedback .photo {
+        height: 284px;
+    }
+
+    .slogan_icons .container {
+        background-size: auto, auto;
+    }
+
+    .country_section {
+        padding: 228px 0 100px 0
+    }
+
+    section {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 }
